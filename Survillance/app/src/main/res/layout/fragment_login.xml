@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dali.survillance.fragment.LoginFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/id_login_input_email"
+            android:hint="\temail"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_margin="10dp"
+            android:background="@color/colorgreylight"
+            android:padding="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/id_login_input_password"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="\tpassword"
+            android:background="@color/colorgreylight"
+            android:padding="15dp" />
+
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_login_bt_login"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/ripple_custom"
+            android:layout_gravity="center" />
+        <Button
+            android:text="Make as Tracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_login_bt_login_tracker"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/ripple_custom"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_row_trackers_name"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_row_trackers_prenom"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/id_row_trackers_name"
+            android:layout_marginStart="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="get postion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_row_trackers_position"
+            android:background="@drawable/ripple_custom"
+            android:textColor="@drawable/text_selection"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="what do"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_row_trackers_do"
+            android:background="@drawable/ripple_custom"
+            android:textColor="@drawable/text_selection"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

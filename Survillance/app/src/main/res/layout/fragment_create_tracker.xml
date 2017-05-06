@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dali.survillance.fragment.CreateTrackerFragment">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/id_create_tracker_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorgreylight"
+                android:padding="10dp"
+                android:hint="\tNom"
+                android:layout_weight="0.5"/>
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:id="@+id/id_create_tracker_prenom"
+                android:layout_weight="0.5"
+                android:background="@color/colorgreylight"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="\tprenom"/>
+        </LinearLayout>
+        <EditText
+
+            android:id="@+id/id_create_tracker_age"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:background="@color/colorgreylight"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="\tage"/>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="\t Gender"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" />
+        <RadioGroup
+            android:id="@+id/id_create_tracker_rg_gender"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:checkedButton="@+id/R.id.id_inscri_radio_male"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_create_tracker_radio_female"
+
+                android:text="female"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_create_tracker_radio_male"
+
+                android:text="male"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:text="Create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/ripple_custom"
+        android:id="@+id/id_create_tracker_bt_create" />
+</RelativeLayout>

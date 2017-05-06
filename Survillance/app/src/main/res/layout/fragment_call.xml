@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorgreylight"
+    tools:context="dali.survillance.fragment.CallFragment">
+
+    <Button
+        android:id="@+id/id_calls_fragment_bt_make_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Call"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:textColor="@drawable/text_selection"
+        android:background="@drawable/ripple_custom_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/id_calls_fragment_recycler" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/id_ll_empty_calls"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You doesn't make any Call"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Call And Save it "
+            android:id="@+id/id_calls_fragment_empty_bt_make"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/ripple_custom"/>
+    </LinearLayout>
+</LinearLayout>
